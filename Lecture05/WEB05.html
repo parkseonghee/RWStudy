@@ -17,7 +17,7 @@
     <button onclick="zzz()">초기화</button>
     <div id="div">
         <div class="div1"><p id="test">first</p></div>
-        <div class="div2">second</div>
+        <div class="div2" onclick="xxx()"><p id="test2">second</p></div>
         <div class="div3"></div>
     </div>
 
@@ -25,6 +25,29 @@
         function zzz(){
            var el = document.getElementById("test");
            el.innerHTML= "🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥<br>🟨🟨🟨🟨🟨🟨🟨🟨🟨<br>🟩🟩🟩🟩🟩🟩🟩<br>🟦🟦🟦🟦🟦<br>🟪🟪🟪<br>⬛";
+        }
+
+        function xxx(){
+            
+            var array=[];
+
+           array.push("🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥");
+           array.push("   🟨🟨🟨🟨🟨🟨🟨🟨🟨");
+           array.push("     🟩🟩🟩🟩🟩🟩🟩");
+           array.push("       🟦🟦🟦🟦🟦");
+           array.push("         🟪🟪🟪");
+           array.push("            ⬛");
+
+           console.log(array.shift());
+           console.log(array.shift());
+           console.log(array.shift());
+           console.log(array.shift());
+           console.log(array.shift());
+           console.log(array.shift());
+
+           var array = document.getElementById("test2");
+           array.innerHTML= "🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥<br>🟨🟨🟨🟨🟨🟨🟨🟨🟨<br>🟩🟩🟩🟩🟩🟩🟩<br>🟦🟦🟦🟦🟦<br>🟪🟪🟪<br>⬛";
+            
         }
     </script>
 
